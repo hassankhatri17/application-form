@@ -1,0 +1,59 @@
+/* ============================================
+   SPRINGBOARD — Design Tokens
+   A dark "hiring" palette: deep charcoal base,
+   off-white ink, amber for the primary action —
+   energetic without being loud.
+   ============================================ */
+
+:root {
+  --paper:       #0B0D12;
+  --paper-dim:    #14161F;
+  --ink:         #F2F2F5;
+  --ink-70:      rgba(242, 242, 245, 0.72);
+  --ink-45:      rgba(242, 242, 245, 0.45);
+  --accent:      #F5A623;
+  --accent-dim:   rgba(245, 166, 35, 0.16);
+  --success:     #34D399;
+  --success-dim:  rgba(52, 211, 153, 0.16);
+  --danger:      #F87171;
+  --danger-dim:   rgba(248, 113, 113, 0.16);
+  --line:        rgba(242, 242, 245, 0.12);
+  --line-strong: rgba(242, 242, 245, 0.24);
+  --surface:     #171923;
+
+  --font-display: 'Sora', -apple-system, sans-serif;
+  --font-body:    'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono:    'JetBrains Mono', 'Courier New', monospace;
+
+  --text-xs:   0.75rem;
+  --text-sm:   0.875rem;
+  --text-base: 1rem;
+  --text-md:   1.125rem;
+  --text-lg:   clamp(1.25rem, 1.1rem + 0.5vw, 1.4rem);
+  --text-xl:   clamp(1.6rem, 1.3rem + 1.2vw, 2.1rem);
+  --text-2xl:  clamp(2rem, 1.6rem + 1.8vw, 2.75rem);
+
+  --sp-1: 0.25rem;
+  --sp-2: 0.5rem;
+  --sp-3: 0.75rem;
+  --sp-4: 1rem;
+  --sp-5: 1.5rem;
+  --sp-6: 2rem;
+  --sp-7: 3rem;
+  --sp-8: 4rem;
+
+  --container-max: 720px;
+  --container-pad: clamp(1.25rem, 4vw, 3rem);
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-pill: 999px;
+
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --dur-fast: 160ms;
+  --dur-med: 300ms;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root { --dur-fast: 0ms; --dur-med: 0ms; }
+}
